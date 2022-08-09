@@ -23,24 +23,26 @@
         border: 1px solid gray !important;
         border-radius: 2px !important;
       }
+
+      .bg-opacity {
+        background-color: rgba(241, 243, 255, 0.6);
+      }
     </style>
   </head>
   <body>
-    <header>
-      <nav class="navbar bg-gray">
-        <div class="container">
-          <a
-            class="navbar-brand bg-primary text-primary p-1 rounded fw-bold"
-            href="#"
-            >Binar Car Rental</a
-          >
+    <header class="sticky-top">
+      <nav class="navbar bg-gray bg-opacity">
+        <div class="container py-1">
+          <a class="navbar-brand bg-primary text-primary rounded" href="#">
+            Binar Car Rental
+          </a>
           <div class="d-lg-flex gap-3 d-none">
             <a class="nav-link" href="#our-services">Our Services</a>
             <a class="nav-link" href="#why-us">Why Us</a>
             <a class="nav-link" href="#testimonial">Testimonial</a>
             <a class="nav-link" href="#faq">FAQ</a>
-            <a class="nav-link btn btn-success text-white px-2" href="#"
-              >Register
+            <a class="nav-link btn btn-success text-white px-2" href="#">
+              Register
             </a>
           </div>
           <button
@@ -59,9 +61,7 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
-                Offcanvas
-              </h5>
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -72,12 +72,19 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#"
-                    >Home</a
-                  >
+                  <a class="nav-link" href="#our-services">Our Services </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Link</a>
+                  <a class="nav-link" href="#why-us">Why Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#testimonial">Testimonial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#faq">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <button class="btn btn-success">Register</button>
                 </li>
               </ul>
             </div>
@@ -110,7 +117,7 @@
       <div class="container">
         <!-- Features Section -->
 
-        <section class="row my-5">
+        <section class="row my-5" id="our-services">
           <div class="col-lg-6">
             <img
               src="./assets/images/img_service.svg"
@@ -153,7 +160,7 @@
 
         <!-- Why Us Section -->
 
-        <section class="my-5">
+        <section class="my-5" id="why-us">
           <div class="text-center">
             <h2>Why Us?</h2>
             <p>Mengapa harus pilih Binar Car Rental?</p>
@@ -221,7 +228,7 @@
 
         <!-- Testimonial Section -->
 
-        <section class="my-5">
+        <section class="my-5" id="testimonial">
           <div class="text-center">
             <h2>Testimonial</h2>
             <p>Berbagai review positif dari para pelanggan kami</p>
@@ -346,7 +353,7 @@
 
         <!-- FAQ Section -->
 
-        <section class="my-5 row">
+        <section class="my-5 row" id="faq">
           <div class="col-lg-6">
             <div class="text-center">
               <h2>Frequently Asked Questions</h2>
@@ -463,67 +470,74 @@
       </div>
     </main>
 
-    <footer class="text-center text-lg-start bg-light text-muted py-4">
+    <footer class="text-start bg-light text-muted py-4">
       <section>
-        <div class="container text-center text-md-start mt-5">
+        <div class="container text-start mt-5">
           <div class="row mt-3">
-            <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
               <p>
                 Lapangan Murdjani, Loktabat Utara, Kec. Banjarbaru Utara, Kota
                 Banjar Baru, Kalimantan Selatan 70714
               </p>
-              <p>binarcarrental@mail.com</p>
-              <p>089-1212-222-223</p>
+              <p>
+                <a
+                  href="mailto:binarcarrental@mail.com"
+                  class="text-muted text-decoration-none"
+                  >binarcarrental@mail.com
+                </a>
+              </p>
+              <p>
+                <a
+                  href="tel:089-1212-222-223"
+                  class="text-muted text-decoration-none"
+                  >089-1212-222-223</a
+                >
+              </p>
             </div>
             <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
               <p>
-                <a href="#!" class="text-reset">Our Services</a>
+                <a href="#our-services" class="nav-link">Our Services</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Why Us</a>
+                <a href="#why-us" class="nav-link">Why Us</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">Testimonial</a>
+                <a href="#testimonial" class="nav-link">Testimonial</a>
               </p>
               <p>
-                <a href="#!" class="text-reset">FAQ</a>
+                <a href="#faq" class="nav-link">FAQ</a>
               </p>
             </div>
-            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mb-4">
               <p>Connect with us</p>
               <img
                 src="./assets/images/logo/facebook.svg"
-                class="mx-1 bg-primary p-2 my-1 rounded"
+                class="m-1"
                 alt="Facebook Logo"
               />
               <img
                 src="./assets/images/logo/twitter.svg"
-                class="mx-1 bg-primary p-2 my-1 rounded"
+                class="m-1"
                 alt="twitter Logo"
               />
               <img
                 src="./assets/images/logo/instagram.svg"
-                class="mx-1 bg-primary p-2 my-1 rounded"
+                class="m-1"
                 alt="instagram Logo"
               />
               <img
-                src="./assets/images/logo/linkedin.svg"
-                class="mx-1 bg-primary p-2 my-1 rounded"
-                alt="linkedin Logo"
-              />
-              <img
                 src="./assets/images/logo/email.svg"
-                class="mx-1 bg-primary p-2 my-1 rounded"
+                class="m-1"
                 alt="Email Logo"
               />
               <img
-                src="./assets/images/logo/email.svg"
-                class="mx-1 bg-primary p-2 my-1 rounded"
+                src="./assets/images/logo/twitch.svg"
+                class="m-1"
                 alt="Email Logo"
               />
             </div>
-            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-              <p>&copy; Copyright Binar 2022</p>
+            <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
+              <p>&copy; Binar 2022</p>
               <span class="text-primary bg-primary">Binar Car Rental</span>
             </div>
           </div>
