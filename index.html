@@ -3,7 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Binar Car Rental</title>
+    <meta
+      name="description"
+      content="Landing page binar car rental untuk Frontend JavaScript Binar Challenge 1"
+    />
+    <title>Binar Car Rental | Frontend JavaScript</title>
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -11,6 +16,10 @@
       crossorigin="anonymous"
     />
     <style>
+      body {
+        font-family: Helvetica, sans-serif;
+      }
+
       .bg-gray {
         background-color: #f1f3ff;
       }
@@ -27,13 +36,32 @@
       .bg-opacity {
         background-color: rgba(241, 243, 255, 0.6);
       }
+
+      .font-36 {
+        font-size: 36px;
+      }
+
+      .btn-green {
+        background: #5cb85f;
+      }
+
+      .bg-primary-dark-blue {
+        background: #0d28a6;
+      }
+
+      .text-primary-dark-blue {
+        color: #0d28a6;
+      }
     </style>
   </head>
   <body>
     <header class="sticky-top">
       <nav class="navbar bg-gray bg-opacity">
         <div class="container py-1">
-          <a class="navbar-brand bg-primary text-primary rounded" href="#">
+          <a
+            class="navbar-brand bg-primary-dark-blue text-primary-dark-blue rounded"
+            href="#"
+          >
             Binar Car Rental
           </a>
           <div class="d-lg-flex gap-3 d-none">
@@ -41,7 +69,7 @@
             <a class="nav-link" href="#why-us">Why Us</a>
             <a class="nav-link" href="#testimonial">Testimonial</a>
             <a class="nav-link" href="#faq">FAQ</a>
-            <a class="nav-link btn btn-success text-white px-2" href="#">
+            <a class="nav-link btn btn-green text-white px-2" href="#">
               Register
             </a>
           </div>
@@ -84,7 +112,7 @@
                   <a class="nav-link" href="#faq">FAQ</a>
                 </li>
                 <li class="nav-item">
-                  <button class="btn btn-success">Register</button>
+                  <button class="btn btn-green">Register</button>
                 </li>
               </ul>
             </div>
@@ -96,14 +124,18 @@
       <!-- Hero Section -->
 
       <section class="row bg-gray mb-5 pt-5">
-        <div class="col-lg-6 p-5">
-          <h1 class="fw-bold">Sewa & Rental Mobil Terbaik di kawasan Bali</h1>
+        <div class="col-lg-6 p-lg-5 mb-5 mb-md-0">
+          <h1 class="fw-bold font-36">
+            Sewa & Rental Mobil Terbaik di kawasan Bali
+          </h1>
           <p>
             Selamat datang di Binar Car Rental. Kami menyediakan mobil kualitas
             terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
             untuk sewa mobil selama 24 jam.
           </p>
-          <button class="btn btn-success">Mulai Sewa Mobil</button>
+          <button class="btn btn-green text-white fw-bold">
+            Mulai Sewa Mobil
+          </button>
         </div>
         <div class="col-lg-6 text-center">
           <img
@@ -329,14 +361,18 @@
 
         <!-- CTA Section -->
 
-        <section class="text-center my-5 p-5 bg-primary rounded text-white">
+        <section
+          class="text-center my-5 p-5 bg-primary-dark-blue rounded text-white"
+        >
           <h2>Sewa Mobil di Bali Sekarang</h2>
           <p class="mx-lg-5">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum, nisi
             animi. Velit atque id inventore animi repellat itaque aspernatur
             amet.
           </p>
-          <button class="btn btn-success fw-bold">Mulai Sewa Mobil</button>
+          <button class="btn btn-green text-white fw-bold">
+            Mulai Sewa Mobil
+          </button>
         </section>
 
         <!-- FAQ Section -->
@@ -351,7 +387,7 @@
           <div class="col-lg-6">
             <div class="accordion" id="accordionExample">
               <div
-                class="accordion-item mb-5 border-bottom-0 border-end-0 border-start-0 border-top-0 custom-border"
+                class="accordion-item mb-4 border-bottom-0 border-end-0 border-start-0 border-top-0 custom-border"
               >
                 <h2 class="accordion-header" id="headingOne">
                   <button
@@ -362,7 +398,7 @@
                     aria-expanded="true"
                     aria-controls="collapseOne"
                   >
-                    Accordion Item #1
+                    Apa saja syarat yang dibutuhkan?
                   </button>
                 </h2>
                 <div
@@ -385,7 +421,7 @@
                 </div>
               </div>
               <div
-                class="accordion-item my-5 border-bottom-0 border-end-0 border-start-0 custom-border"
+                class="accordion-item my-4 border-bottom-0 border-end-0 border-start-0 custom-border"
               >
                 <h2 class="accordion-header" id="headingTwo">
                   <button
@@ -396,7 +432,7 @@
                     aria-expanded="false"
                     aria-controls="collapseTwo"
                   >
-                    Accordion Item #2
+                    Berapa hari minimal sewa mobil lepas kunci?
                   </button>
                 </h2>
                 <div
@@ -419,7 +455,7 @@
                 </div>
               </div>
               <div
-                class="accordion-item my-5 border-bottom-0 border-end-0 border-start-0 custom-border"
+                class="accordion-item my-4 border-bottom-0 border-end-0 border-start-0 custom-border"
               >
                 <h2 class="accordion-header" id="headingThree">
                   <button
@@ -430,13 +466,81 @@
                     aria-expanded="false"
                     aria-controls="collapseThree"
                   >
-                    Accordion Item #3
+                    Berapa hari sebelumnya sabaiknya booking sewa mobil?
                   </button>
                 </h2>
                 <div
                   id="collapseThree"
                   class="accordion-collapse collapse"
                   aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="accordion-item my-4 border-bottom-0 border-end-0 border-start-0 custom-border"
+              >
+                <h2 class="accordion-header" id="headingFour">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Apakah Ada biaya antar-jemput?
+                  </button>
+                </h2>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFour"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <strong>This is the third item's accordion body.</strong> It
+                    is hidden by default, until the collapse plugin adds the
+                    appropriate classes that we use to style each element. These
+                    classes control the overall appearance, as well as the
+                    showing and hiding via CSS transitions. You can modify any
+                    of this with custom CSS or overriding our default variables.
+                    It's also worth noting that just about any HTML can go
+                    within the <code>.accordion-body</code>, though the
+                    transition does limit overflow.
+                  </div>
+                </div>
+              </div>
+              <div
+                class="accordion-item my-4 border-bottom-0 border-end-0 border-start-0 custom-border"
+              >
+                <h2 class="accordion-header" id="headingFive">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFive"
+                    aria-expanded="false"
+                    aria-controls="collapseFive"
+                  >
+                    Bagaimana jika terjadi kecelakaan
+                  </button>
+                </h2>
+                <div
+                  id="collapseFive"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="headingFive"
                   data-bs-parent="#accordionExample"
                 >
                   <div class="accordion-body">
@@ -526,7 +630,9 @@
             </div>
             <div class="col-md-4 col-lg-2 col-xl-2 mx-auto mb-md-0 mb-4">
               <p>&copy; Binar 2022</p>
-              <span class="text-primary bg-primary">Binar Car Rental</span>
+              <span class="text-primary-dark-blue bg-primary-dark-blue">
+                Binar Car Rental
+              </span>
             </div>
           </div>
         </div>
