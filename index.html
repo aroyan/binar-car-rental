@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -56,6 +56,14 @@
       .text-primary-dark-blue {
         color: #0d28a6;
       }
+
+      .custom-card-text {
+        font-size: 14px;
+      }
+
+      .circle.btn-green.btn {
+        margin: 1rem;
+      }
     </style>
   </head>
   <body>
@@ -68,13 +76,13 @@
           >
             Binar Car Rental
           </a>
-          <div class="d-lg-flex gap-3 d-none">
+          <div class="d-lg-flex gap-3 d-none align-items-center">
             <a class="nav-link" href="#our-services">Our Services</a>
             <a class="nav-link" href="#why-us">Why Us</a>
             <a class="nav-link" href="#testimonial">Testimonial</a>
             <a class="nav-link" href="#faq">FAQ</a>
-            <a class="nav-link btn-green text-white px-2 rounded" href="#!">
-              Register
+            <a class="nav-link text-white rounded" href="#!">
+              <button class="btn btn-green text-white fw-bold">Register</button>
             </a>
           </div>
           <button
@@ -93,7 +101,9 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">BCR</h5>
+              <p class="fw-bold offcanvas-title" id="offcanvasNavbarLabel">
+                BCR
+              </p>
               <button
                 type="button"
                 class="btn-close"
@@ -141,7 +151,7 @@
             Mulai Sewa Mobil
           </button>
         </div>
-        <div class="col-lg-6 text-center">
+        <div class="col-lg-6 text-center text-lg-end">
           <img
             src="./assets/images/img_car.svg"
             alt="Hero Mobil Image"
@@ -203,44 +213,44 @@
           </div>
           <div>
             <div class="row justify-content-center">
-              <div class="card col-lg-3 col-md-6 m-lg-0 m-1">
+              <div class="card col-lg-3 col-md-6 m-lg-0 m-1 custom-card-margin">
                 <div class="card-body">
                   <img src="./assets/images/thumb.svg" alt="Thumbs up logo" />
-                  <h5 class="card-title my-3">Mobil Lengkap</h5>
-                  <p class="card-text">
+                  <p class="fw-bold card-title my-3">Mobil Lengkap</p>
+                  <p class="card-text custom-card-text">
                     Tersedia banyak pilihan mobil, kondisi masih baru, bersih
                     dan terawat
                   </p>
                 </div>
               </div>
-              <div class="card col-lg-3 col-md-6 m-lg-0 m-1">
+              <div class="card col-lg-3 col-md-6 m-lg-0 m-1 custom-card-margin">
                 <div class="card-body">
                   <img
                     src="./assets/images/pricetag.svg"
                     alt="Thumbs up logo"
                   />
-                  <h5 class="card-title my-3">Harga Murah</h5>
-                  <p class="card-text">
+                  <p class="fw-bold card-title my-3">Harga Murah</p>
+                  <p class="card-text custom-card-text">
                     Harga murah dan bersaing, bisa dibandingkan harga kami
                     dengan rental mobil lain
                   </p>
                 </div>
               </div>
-              <div class="card col-lg-3 col-md-6 m-lg-0 m-1">
+              <div class="card col-lg-3 col-md-6 m-lg-0 m-1 custom-card-margin">
                 <div class="card-body">
                   <img src="./assets/images/clock.svg" alt="Thumbs up logo" />
-                  <h5 class="card-title my-3">Layanan 24 Jam</h5>
-                  <p class="card-text">
+                  <p class="fw-bold card-title my-3">Layanan 24 Jam</p>
+                  <p class="card-text custom-card-text">
                     Siap melayani kebutuhan Anda selama 24 jam nonstop. Kami
                     juga tersedia di akhir minggu
                   </p>
                 </div>
               </div>
-              <div class="card col-lg-3 col-md-6 m-lg-0 m-1">
+              <div class="card col-lg-3 col-md-6 m-lg-0 m-1 custom-card-margin">
                 <div class="card-body">
                   <img src="./assets/images/badge.svg" alt="Thumbs up logo" />
-                  <h5 class="card-title my-3">Sopir Profesional</h5>
-                  <p class="card-text">
+                  <p class="fw-bold card-title my-3">Sopir Profesional</p>
+                  <p class="card-text custom-card-text">
                     Sopir yang professional, berpengalaman, jujur, ramah dan
                     selalu tepat waktu
                   </p>
@@ -336,30 +346,34 @@
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#carouselExampleControls"
-              data-bs-slide="next"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Next</span>
-            </button>
+            <div class="d-flex justify-content-center mt-3">
+              <div>
+                <button
+                  class="circle btn-green btn"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="circle btn-green btn"
+                  type="button"
+                  data-bs-target="#carouselExampleControls"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
           </div>
         </section>
 
