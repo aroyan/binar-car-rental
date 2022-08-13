@@ -46,3 +46,11 @@ body {
 .circle.btn-green.btn {
   margin: 1rem;
 }
+
+.nav-spacer {
+  height: 64px;
+}
+
+#offcanvasNavbar {
+  width: 250px;
+}
